@@ -6,4 +6,3 @@ An Android and IOS mobile app for recipes where users can filters, select and pu
 
 ### for android :
   `npx react-ntive run-android`
-  
