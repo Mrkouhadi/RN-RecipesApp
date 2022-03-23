@@ -1,9 +1,9 @@
 # RN-RecipesApp is:
 An Android and IOS mobile app for recipes where users can filters, select and put recipes in their favorite recipes list.
 # set up:
-### ios :
+### for ios :
   `npx react-ntive run-ios`
 
-### android :
+### for android :
   `npx react-ntive run-android`
   
