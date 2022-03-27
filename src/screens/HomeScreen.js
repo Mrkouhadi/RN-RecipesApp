@@ -13,7 +13,7 @@ const HomeScreen = props => {
 
   return  <SafeAreaView style={styles.screen}>
                 <View style={styles.innerScreen}>
-                    <Text style={styles.title}>Recipes' Home of the most delicious Dishes</Text>
+                    <Text style={styles.title}> Home of recipes of the most Delicious Dishes</Text>
                     <PrimaryButton onPress={()=>props.navigation.navigate('Meals')} styling={styles.btn}>
                         Get Started
                     </PrimaryButton>
