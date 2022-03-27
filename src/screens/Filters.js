@@ -25,7 +25,7 @@ const Filters = (props) => {
     const [isLactoseFree, setIsLactoseFree] = useState(false);
     const dispatch = useDispatch();
 
-    const saveHandler = useCallback(()=>{  // usign usecallback, saveHandler will be recreated only when there is a change in the state
+    const saveHandler = useCallback(()=>{  
         const appliedFilters = {
             isGlutenFree,
             isLactoseFree,
@@ -37,14 +37,13 @@ const Filters = (props) => {
 
     useLayoutEffect(()=>{
         props.navigation.setOptions({
-            // headerBackTitle:'cc',
             headerRight:()=> <Icon name="save" color={colors.primaryColor}  size={25}  onPress={saveHandler}/>,
         });
       }, [props.navigation, saveHandler])
 
     return (
         <View style={styles.screen}>
-           <Text style={styles.title}> Available Filters  </Text>
+           <Text style={styles.title}> All Filters  </Text>
             <FilterSwitch title="Gluten-free" filter={isGlutenFree} func={setIsGlutenFree} />
             <FilterSwitch title="Vegan" filter={isVegan} func={setIsVegan} />
             <FilterSwitch title="Vegetarian" filter={isVegetarian} func={setIsVegetarian} />
