@@ -6,9 +6,6 @@ const AboutScreen = props => {
     return (
         <View style={styles.screen}>
            <Text>  This is a sample screen of ABOUT page  </Text>
-           <Button title="open drawer" color='black'
-                    onPress={()=>props.navigation.openDrawer()}
-           />
         </View>
     )
 }
