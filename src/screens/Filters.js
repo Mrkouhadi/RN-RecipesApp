@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect, useCallback } from 'react'
-import {View, Text, StyleSheet, Switch, Platform, Button} from 'react-native'
+import {View, Text, StyleSheet, Switch, Platform} from 'react-native'
 import Icon from "react-native-vector-icons/AntDesign"; 
 
 import { useSelector } from 'react-redux';

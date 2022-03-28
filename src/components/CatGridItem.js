@@ -1,15 +1,15 @@
 import React from "react"
-import {View, TouchableOpacity, Text, StyleSheet, TouchableNativeFeedback, Platform} from 'react-native'
+import {View, Pressable, Text, StyleSheet} from 'react-native'
 
 const CatGridItem = props =>{
 
-    return <TouchableOpacity style={styles.gridItem}
+    return <Pressable style={styles.gridItem}
                 onPress={props.onSelect}
             >
                 <View style={{...{backgroundColor:props.color},...styles.item}}>
                     <Text numberOfLines={1} style={styles.title}>{props.title}</Text>
                 </View>
-            </TouchableOpacity>
+            </Pressable>
 }
 
 const styles = StyleSheet.create({

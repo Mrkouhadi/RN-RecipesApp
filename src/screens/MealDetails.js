@@ -1,5 +1,5 @@
 import React, { useCallback, useLayoutEffect } from 'react';
-import {View, Text, StyleSheet, Button, ScrollView, Image} from 'react-native';
+import {View, Text, StyleSheet, ScrollView, Image} from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import {toggleFavorite} from '../store/actions/meals'
 import colors from '../constants/colors'

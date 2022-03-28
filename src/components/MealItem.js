@@ -1,9 +1,9 @@
 import React from "react";
-import { StyleSheet, View, Text, TouchableOpacity, ImageBackground } from "react-native";
+import { StyleSheet, View, Text, Pressable, ImageBackground } from "react-native";
 
 const MealItem = props =>{
     return <View style={styles.itemBox}>
-             <TouchableOpacity onPress={props.onSelect}>
+             <Pressable onPress={props.onSelect}>
                 <View style={styles.itemDetails}>
                     <View style={{...styles.mealRow,...styles.mealHeader }}>
                         <ImageBackground source={{uri:props.image}} style={styles.bgImage}>
@@ -18,7 +18,7 @@ const MealItem = props =>{
                         <Text>{props.affordability.toUpperCase()}</Text>
                     </View>
                 </View>
-             </TouchableOpacity>
+             </Pressable>
            </View>
 };
 
@@ -34,13 +34,12 @@ const styles = StyleSheet.create({
         shadowOffset:{width:0, height:3},
         shadowRadius:10,
         shadowOpacity:0.26,
-        elevation:3, // to make these shadow properties work on android
+        elevation:3, 
     },
     titleBox:{
         backgroundColor:'rgba(0,0,0,.5)',
     },
     title:{
-        // fontFamily:'Montserratextrabold',
         fontSize:24,
         letterSpacing:2,
         color:'#fff',
