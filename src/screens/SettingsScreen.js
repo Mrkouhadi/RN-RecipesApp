@@ -5,7 +5,7 @@ const SettingsScreen = props => {
 
     return (
         <View style={styles.screen}>
-           <Text>  Setting  </Text>
+           <Text>  This is a sample screen of SETTING page  </Text>
            <Button title="open drawer" color='black'
                     onPress={()=>props.navigation.openDrawer()}
            />

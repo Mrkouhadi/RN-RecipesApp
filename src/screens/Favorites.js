@@ -11,7 +11,7 @@ const Favorites = (props) => {
         props.navigation.setOptions({headerTitle:"Favorite Dishes", headerShown:true});
     })
     if(favoriteMeals.length === 0) return <View style={styles.screen}>
-                                            <Text style={styles.title}> No Favorite Meals available at the moment </Text>
+                                            <Text style={styles.title}> Your list of Favorite Meals is completely Empty !</Text>
                                             <PrimaryButton onPress={()=>props.navigation.navigate('Meals')} styling={styles.btn}>
                                                 Check all Meals
                                             </PrimaryButton>
