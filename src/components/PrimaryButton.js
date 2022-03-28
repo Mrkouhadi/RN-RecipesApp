@@ -1,13 +1,12 @@
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, } from 'react-native'
+import { StyleSheet, Text, Pressable, } from 'react-native'
 
 const PrimaryButton = props => {
-  return <TouchableOpacity onPress={props.onPress}
+  return <Pressable onPress={props.onPress}
                  style={{...styles.btnContainer, ...props.styling}}>
             <Text style={styles.btnText}>{props.children}</Text>
-        </TouchableOpacity>
+        </Pressable>
 }
-
 
 const styles = StyleSheet.create({
     btnContainer:{
