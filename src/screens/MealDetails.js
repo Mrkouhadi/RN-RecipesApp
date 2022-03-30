@@ -49,7 +49,6 @@ const MealDetails = (props) => {
 const styles = StyleSheet.create({
     screen:{
         alignItems:'center',
-        // flex:1,
         minHeight:'100%',
         width:'100%',
     },
@@ -68,7 +67,6 @@ const styles = StyleSheet.create({
         fontSize:20,
         fontWeight:'bold',
         marginVertical:15,
-        // textDecorationLine: 'underline',
         letterSpacing:3,
 
     },
@@ -80,6 +78,7 @@ const styles = StyleSheet.create({
         borderWidth:1,
         padding:10,
         borderRadius:8,
+        backgroundColor:'pink',
     },
     listItem_txt:{
         fontSize:16, 
