@@ -13,7 +13,6 @@ const FavoritesStackNav = () =>{
    									backgroundColor: colors.accentColor,
    									},
    								headerTintColor: colors.primaryColor,
-								// headerBackTitle:"oo",
    								headerTitleStyle: {
    									fontWeight: 'bold',
    									},

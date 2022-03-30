@@ -1,6 +1,5 @@
 export default {
-    primaryColor: '#6757f7',
-    accentColor: '#c4814d',
+    primaryColor: '#c4814d',
+    accentColor: 'black',
     bg_color:"#D7CEB2",
-    
   };

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {toggleFavorite} from '../store/actions/meals'
 import colors from '../constants/colors'
 import Icon from "react-native-vector-icons/AntDesign"; 
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
         // helper component that i use only in this screen
             const ListItem = props =>{
@@ -22,10 +23,11 @@ const MealDetails = (props) => {
 
     const toggleFavoriteHandler = useCallback(()=>{
         dispatch(toggleFavorite(meal_id));
-    },[dispatch,meal_id])
+    },[dispatch,meal_id]);
+
     useLayoutEffect(()=>{
       props.navigation.setOptions({
-            headerLeft:()=><Icon name="back" size={25} color="blue" onPress={()=>props.navigation.goBack()}/>, 
+            headerLeft:()=><Icon name="back" size={25} color={colors.primaryColor}  onPress={()=>props.navigation.goBack()}/>, 
             headerTitle:meal_title,
             headerRight:()=><Icon name={isfavoried>=0 ? "heart" : "hearto"} color={colors.primaryColor}  size={25}  onPress={toggleFavoriteHandler}/>
         });
@@ -63,7 +65,7 @@ const styles = StyleSheet.create({
         backgroundColor:'pink'
     },
     title:{
-        color:'blue',
+        color:Colors.primaryColor,
         fontSize:20,
         fontWeight:'bold',
         marginVertical:15,

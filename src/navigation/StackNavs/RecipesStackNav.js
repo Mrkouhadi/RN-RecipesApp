@@ -4,15 +4,16 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Categories from '../../screens/Categories'
 import CategoryMeals from '../../screens/CategoryMeals'
 import MealDetails from '../../screens/MealDetails';
+import colors from '../../constants/colors';
 const Stack = createNativeStackNavigator();
 
 const RecipesStackNav = () =>{
 
   return <Stack.Navigator  screenOptions={{
    								headerStyle: {
-   									backgroundColor: '#f4511e',
+   									backgroundColor: colors.accentColor,
    									},
-   								headerTintColor: '#fff',
+   								headerTintColor:colors.primaryColor,
    								headerTitleStyle: {
    									fontWeight: 'bold',
    									},

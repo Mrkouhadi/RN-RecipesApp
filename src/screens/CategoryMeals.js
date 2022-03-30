@@ -14,7 +14,7 @@ const CategoryMeals = (props) => {
     useLayoutEffect(()=>{
         props.navigation.setOptions({
             headerTitle:category_title,
-            headerLeft:()=><Icon name="back" size={25} color="blue" onPress={()=>props.navigation.goBack()}/>, 
+            headerLeft:()=><Icon name="back" size={25} color={colors.primaryColor} onPress={()=>props.navigation.goBack()}/>, 
         });
     });
 
