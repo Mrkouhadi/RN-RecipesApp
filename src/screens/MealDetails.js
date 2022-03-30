@@ -5,7 +5,7 @@ import {toggleFavorite} from '../store/actions/meals'
 import colors from '../constants/colors'
 import Icon from "react-native-vector-icons/AntDesign"; 
 
-        // helper component
+        // helper component that i use only in this screen
             const ListItem = props =>{
                 return <View style={styles.listItem}>
                         <Text style={styles.listItem_txt}>{props.children}</Text>
