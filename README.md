@@ -8,5 +8,8 @@ An Android and IOS mobile app for recipes where users can filters, select and pu
   `npx react-native run-android`
 
 ## Preview
+<div id="header" align="center">
+  <img src="https://user-images.githubusercontent.com/68134403/161398762-1ca3e14f-39f9-4116-bb1f-8c50607bdb1c.gif"/>
+</div>
 
-![recipeeeeeAPGiiff](https://user-images.githubusercontent.com/68134403/161397755-9d41d57c-fb27-4b17-a3c4-e33db7dc89c0.gif)
+<!-- ![gif-recipeeapp](https://user-images.githubusercontent.com/68134403/161398762-1ca3e14f-39f9-4116-bb1f-8c50607bdb1c.gif) -->
