@@ -20,7 +20,7 @@ const BottomTabsNav = (props) => {
                         tabBarShowLabel: false,
                         tabBarStyle: {backgroundColor: 'pink'},
                         tabBarInactiveTintColor: colors.accentColor,
-                        tabBarActiveTintColor: '#AD40AF',
+                        tabBarActiveTintColor: colors.accentColor,
                    }}>
           <Tab.Screen name="Home" component={HomeScreen} options={{tabBarIcon:({color, focused})=><Ionicons name={focused ? 'home':'home-outline'} color={color} size={25} />}} />
           <Tab.Screen name="Meals" component={RecipesStackNav} options={{tabBarIcon:({color, focused})=><Ionicons name={focused ? 'fast-food':'fast-food-outline'} color={color}  size={25} />}} />
