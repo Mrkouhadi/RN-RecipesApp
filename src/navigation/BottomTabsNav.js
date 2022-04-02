@@ -23,9 +23,9 @@ const BottomTabsNav = (props) => {
                         tabBarInactiveTintColor: '#fff',
                         tabBarActiveTintColor: '#AD40AF',
                    }}>
-          <Tab.Screen name="Home" component={HomeScreen} options={{tabBarIcon:()=><Icon name="home" color={colors.primaryColor} size={25} />}} />
-          <Tab.Screen name="Meals" component={RecipesStackNav} options={{tabBarIcon:()=><Ionicons name="md-fast-food-outline" color={colors.primaryColor}  size={25} />}} />
-          <Tab.Screen name="Favorites"  component={FavoritesStackNav}  options={{tabBarIcon:()=><Icon name="staro" color={colors.primaryColor}  size={25} />}} />
+          <Tab.Screen name="Home" component={HomeScreen} options={{tabBarIcon:()=><Icon name="home" color={colors.accentColor} size={25} />}} />
+          <Tab.Screen name="Meals" component={RecipesStackNav} options={{tabBarIcon:()=><Ionicons name="md-fast-food-outline" color={colors.accentColor}  size={25} />}} />
+          <Tab.Screen name="Favorites"  component={FavoritesStackNav}  options={{tabBarIcon:()=><Icon name="staro" color={colors.accentColor}  size={25} />}} />
     </Tab.Navigator>
   )
 }
