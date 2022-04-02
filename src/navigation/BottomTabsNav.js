@@ -17,8 +17,6 @@ const BottomTabsNav = (props) => {
     <Tab.Navigator screenOptions={{
                         headerShown: false,
                         tabBarShowLabel: false,
-                        // tabBarLabel:'tabbarlabel',
-                        // tabBarIcon:()=><Icon name="hearto" color={colors.primaryColor}  size={25} />
                         tabBarStyle: {backgroundColor: 'pink'},
                         tabBarInactiveTintColor: '#fff',
                         tabBarActiveTintColor: '#AD40AF',
