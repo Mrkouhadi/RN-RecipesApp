@@ -16,7 +16,7 @@ const CategoryMeals = (props) => {
             headerTitle:category_title,
             headerLeft:()=><Icon name="back" size={25} color={colors.primaryColor} onPress={()=>props.navigation.goBack()}/>, 
         });
-    });
+    },[props.navigation]);
 
     if(displayedMeals.length == 0) return  <View style={styles.screen}>
                                                 <Text style={styles.title}>This Category has no meals that match your filers</Text>

@@ -20,8 +20,8 @@ const RecipesStackNav = () =>{
    							}}
 		>
 			  <Stack.Screen name="Categories" component={Categories}  options={{title:"Categories", headerShown:false}}/>
-			  <Stack.Screen name="meals" component={CategoryMeals }  options={{title:"Meals", headerShown:true}}/>
-			  <Stack.Screen name="MealDetails" component={MealDetails }  options={{title:"My meal"}}/>
+			  <Stack.Screen name="meals" component={CategoryMeals }  options={{title:"", headerShown:true}}/>
+			  <Stack.Screen name="MealDetails" component={MealDetails }  options={{title:''}}/>
         </Stack.Navigator>
 }
 export default RecipesStackNav;
