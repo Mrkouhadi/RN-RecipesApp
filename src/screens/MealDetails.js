@@ -29,7 +29,7 @@ const MealDetails = (props) => {
       props.navigation.setOptions({
             headerLeft:()=><Icon name="back" size={25} color={colors.primaryColor}  onPress={()=>props.navigation.goBack()}/>, 
             headerTitle:meal_title,
-            headerRight:()=><Icon name={isfavoried>=0 ? "heart" : "hearto"} color={colors.primaryColor}  size={25}  onPress={toggleFavoriteHandler}/>
+            headerRight:()=><Icon name={isfavoried>=0 ? "star" : "staro"} color={colors.primaryColor}  size={25}  onPress={toggleFavoriteHandler}/>
         });
     },[props.navigation,toggleFavoriteHandler, isfavoried])
 
