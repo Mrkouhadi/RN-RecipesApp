@@ -4,7 +4,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import RecipesStackNav from './StackNavs/RecipesStackNav';
 import FavoritesStackNav from './StackNavs/FavoritesStackNav';
 import HomeScreen from '../screens/HomeScreen';
-import { Text } from 'react-native';
 import Icon from "react-native-vector-icons/AntDesign"; 
 import Ionicons from "react-native-vector-icons/Ionicons"; 
 import colors from '../constants/colors';
