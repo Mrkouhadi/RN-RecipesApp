@@ -19,12 +19,12 @@ const BottomTabsNav = (props) => {
                         headerShown: false,
                         tabBarShowLabel: false,
                         tabBarStyle: {backgroundColor: 'pink'},
-                        tabBarInactiveTintColor: '#fff',
+                        tabBarInactiveTintColor: colors.accentColor,
                         tabBarActiveTintColor: '#AD40AF',
                    }}>
-          <Tab.Screen name="Home" component={HomeScreen} options={{tabBarIcon:()=><Icon name="home" color={colors.accentColor} size={25} />}} />
-          <Tab.Screen name="Meals" component={RecipesStackNav} options={{tabBarIcon:()=><Ionicons name="md-fast-food-outline" color={colors.accentColor}  size={25} />}} />
-          <Tab.Screen name="Favorites"  component={FavoritesStackNav}  options={{tabBarIcon:()=><Icon name="staro" color={colors.accentColor}  size={25} />, tabBarBadge: favoriteMeals.length }} />
+          <Tab.Screen name="Home" component={HomeScreen} options={{tabBarIcon:({color, focused})=><Ionicons name={focused ? 'home':'home-outline'} color={color} size={25} />}} />
+          <Tab.Screen name="Meals" component={RecipesStackNav} options={{tabBarIcon:({color, focused})=><Ionicons name={focused ? 'fast-food':'fast-food-outline'} color={color}  size={25} />}} />
+          <Tab.Screen name="Favorites"  component={FavoritesStackNav}  options={{tabBarIcon:({color,focused})=><Icon name={focused ? 'star':'staro'}  color={color}  size={25} />, tabBarBadge: favoriteMeals.length }} />
     </Tab.Navigator>
   )
 }
