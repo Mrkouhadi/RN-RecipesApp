@@ -4,7 +4,6 @@ import {
     StyleSheet,
     Text,
     View,
-    Button
   } from 'react-native';
   import PrimaryButton from '../components/PrimaryButton';
 
